@@ -1,0 +1,11 @@
+form {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 20rem;
+}

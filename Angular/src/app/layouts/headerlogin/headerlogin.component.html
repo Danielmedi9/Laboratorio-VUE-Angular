@@ -1,0 +1,15 @@
+<nav>
+  <img src="code.ico" alt="" />
+  <ul>
+    <li>
+      <a routerLink="/dashboard" routerLinkActive="selected">Dashboard</a>
+    </li>
+    <li><a routerLink="/galeria" routerLinkActive="selected">Galeria</a></li>
+    <li><a routerLink="/crud" routerLinkActive="selected">CRUD</a></li>
+    <li><a routerLink="/profile" routerLinkActive="selected">Profile</a></li>
+  </ul>
+  <div *ngIf="isLoggedIn" style="float: right">
+    Hola, {{ username }} |
+    <a href="#" (click)="logout()">Logout</a>
+  </div>
+</nav>

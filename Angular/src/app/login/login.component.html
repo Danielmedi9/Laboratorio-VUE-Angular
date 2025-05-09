@@ -1,0 +1,41 @@
+<h2>Iniciar sesión</h2>
+
+<form #addForm="ngForm" (ngSubmit)="onLogin(addForm)">
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Usuario</mat-label>
+    <input
+      matInput
+      name="username"
+      ngModel
+      required
+      placeholder="Ingrese su usuario"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Contraseña</mat-label>
+    <input
+      matInput
+      type="password"
+      name="password"
+      ngModel
+      required
+      placeholder="Ingrese su contraseña"
+    />
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="!addForm.valid"
+  >
+    Iniciar sesión
+  </button>
+</form>
+
+<div>
+  <p>user: master&#64;lemoncode.net</p>
+
+  <p>password: 12345678</p>
+</div>
